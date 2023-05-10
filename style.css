@@ -1,0 +1,165 @@
+:root{
+	--purple:#393053;
+	--blue:#2A2F4F;
+	--white:#ffffff;
+/*	--other:#B3C99C;*/
+	--pink:#E90064;
+	--control:#BDBDBD;
+	--lightpink:#C3ACD0;
+	--background:#900C3F;
+	--background1:#EEEEEE;
+	--green:#04580E;
+	--other:#E3CC0B  ;
+}
+body{
+/*	display: flex;*/
+	background: #ffffff;
+}
+.main{
+	height: 400px;
+	width: 650px;
+	margin-left: 350px;
+	margin-top: 50px;
+}
+.main .textareas{
+	height: 300px;
+	width: 650px;
+/*	margin-left: 25px;*/
+/*border: 2px solid #000;*/
+}
+.main .textareas .textarea{
+	height: 300px;
+	width: 250px;
+	float: left;
+	border-right: 1px solid #000;
+	margin-right: 20px;	
+}
+.main .textareas .textarea .textarea0{
+	outline: none;
+	width:300px ;
+	height: 300px;
+	padding: 10px 10px;
+	border: none;
+	font-size: 18px;
+	font-family: sans-serif;
+	min-height: 300px;
+	float: left;
+	resize: none;
+	background: var(--background1);
+}
+.main .textareas .textarea .textarea0:scroll{
+	display: none;
+}
+.main .textareas .textarea #textarea-0{
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin-left: 6px;
+	border-right: 1px solid var(--blue);
+}
+.main .textareas .textarea #textarea-1{
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+/*	border-left: 1px solid grey;*/
+	margin-left: 57px;
+}
+.main .textareas .textarea .textarea0:focus{
+	outline: none;
+	border: none;
+}
+.main .controls{
+	height: 40px;
+	width: 100%;
+	position: relative;
+	display: flex;
+	margin-top: 22px;
+	background: var(--control);
+	border-radius: 5px;
+
+}
+.main .controls .div0{
+	height: 100%;
+	width: 100px;
+	float: left;
+}
+.main .controls .div0 select{
+	height: 100%;
+	width: 100px;
+	margin-left: 100px;
+	background: none;
+	border: none;
+	z-index: 100000;
+	color: color: #000;;
+}
+.main .controls .div0 select option{
+	background: var(--control);
+/*	width: 500px;*/
+}
+.main .controls .div0 select:focus{
+	outline: none;
+}
+.main .controls .exchange{
+	height: 40;
+	width: 40px;
+	float: left;
+/*	font-color: var(--blue);*/
+	position: relative;
+	margin-left: 205px;
+/*	border: 2px solid #000;*/
+	color: yellow;
+}
+.main .controls .div1{
+	height: 100%;
+	width: 100px;
+	float: left;
+}
+.main .controls .div1 select{
+	height: 100%;
+	width: 100px;
+	float: left;
+	margin-left: 100px;
+	background: none;
+	border: none;
+	color: #000;;
+}
+.main .controls .div1 select option{
+	background: var(--control);
+}
+.main .controls .div1 select:focus{
+	outline: none;
+}
+.main .translate-btn{
+	height: 40px;
+	width: 100%;
+	margin-top: 2px;
+	background: #7B1FA2;
+	border-radius: 5px;
+}
+.main .translate-btn button{
+	height: 35px;
+	width: 100%;
+/*	margin-left: 10%;*/
+	margin-top: 2.5px;
+	border: none;
+	background: none;
+	cursor: pointer;
+	font-size: 18px;
+	color: #ffffff;
+/*	font-weight: ;*/
+/*	font-family:cursive;*/
+}
+.main .translate-btn button:focus{
+	outline: none;
+	border: none;
+}
+footer{
+	height: 50px;
+	width: 1350px;
+	position:absolute;
+	bottom: 0;
+	background: #7B1FA2;
+	line-height: 50px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 15px;
+	font-family: sans-serif;
+}
