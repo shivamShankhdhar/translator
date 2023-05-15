@@ -1,5 +1,5 @@
 :root{
-	--purple:#393053;
+	--purple:#7B1FA2;
 	--blue:#2A2F4F;
 	--white:#ffffff;
 /*	--other:#B3C99C;*/
@@ -11,28 +11,115 @@
 	--green:#04580E;
 	--other:#E3CC0B  ;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 body{
 /*	display: flex;*/
-	background: #ffffff;
+	background: var(--white);
+	float: left;
+}
+.message{
+	position: absolute;
+	top: 5px;
+	width: 70%;
+	margin-left: 15%;
+	height: 40px;
+	background: #880808;
+	line-height: 40px;
+	color: var(--white);
+	text-align-last: center;
+	font-family: sans-serif;
+	border-radius: 5px;
+	display: none;
+}
+.message span{
+	height: 40px;
+/*	width: 50px;*/
+/*	border: solid;*/
+	position: absolute;
+	right: 20px;
+	cursor: pointer;
+}
+.left{
+	height: 400px;
+	width: 50px;
+	margin-left: 304px;
+	margin-top: 50px;
+/*	border: solid;*/
+	float: left;
+	position: absolute;
+
+}
+.left .subdiv{
+	height: 40px;
+	width: 50px;
+/*	border: solid;*/
+}
+.left .div-margin-top{
+	margin-top: 2px;
+}
+.left .subdiv button{
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+/*	border: none;*/
+	outline: none;
+}
+.left .subdiv button:focus{
+/*	border: none;*/
+	outline: none;
+}
+.exchaneBtn{
+	height: 40px;
+	width: 100px;
+	position: absolute;
+	margin-left: 620px;
+/*	border: solid;*/
+	font-size: 20px;
+	margin-top: 370px;
+	z-index: 500000;
+	color: black;
 }
 .main{
 	height: 400px;
 	width: 650px;
-	margin-left: 350px;
 	margin-top: 50px;
+	margin-left: 350px;
+	float: left;
+/*	border: solid;*/
 }
 .main .textareas{
-	height: 300px;
+	height: 320px;
 	width: 650px;
 /*	margin-left: 25px;*/
-/*border: 2px solid #000;*/
+/*	border: 1px solid #000;*/
+	margin-top: 0px;
 }
 .main .textareas .textarea{
 	height: 300px;
 	width: 250px;
 	float: left;
-	border-right: 1px solid #000;
+/*	border-top: solid;*/
+/*	border-right: 1px solid grey;*/
 	margin-right: 20px;	
+	
 }
 .main .textareas .textarea .textarea0{
 	outline: none;
@@ -51,14 +138,14 @@ body{
 	display: none;
 }
 .main .textareas .textarea #textarea-0{
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
+/*	border-top-left-radius: 10px;*/
+/*	border-bottom-left-radius: 10px;*/
 	margin-left: 6px;
-	border-right: 1px solid var(--blue);
+/*	border-right: 1px solid var(--blue);*/
 }
 .main .textareas .textarea #textarea-1{
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
+/*	border-top-right-radius: 10px;*/
+/*	border-bottom-right-radius: 10px;*/
 /*	border-left: 1px solid grey;*/
 	margin-left: 57px;
 }
@@ -68,23 +155,29 @@ body{
 }
 .main .controls{
 	height: 40px;
-	width: 100%;
-	position: relative;
+	width: 642px;
+	margin-left: 5px;
+/*	position: relative;*/
 	display: flex;
-	margin-top: 22px;
+/*	margin-top: -50px;*/
 	background: var(--control);
 	border-radius: 5px;
+	margin-top: 2px;
 
 }
 .main .controls .div0{
 	height: 100%;
 	width: 100px;
 	float: left;
+	margin-left: 97px;
+	border-right: 1px solid grey;
+	height: 30px;
+	margin-top: 5px;
 }
 .main .controls .div0 select{
 	height: 100%;
-	width: 100px;
-	margin-left: 100px;
+/*	width: 100px;*/
+	margin-right:10px ;
 	background: none;
 	border: none;
 	z-index: 100000;
@@ -101,25 +194,29 @@ body{
 	height: 40;
 	width: 40px;
 	float: left;
-/*	font-color: var(--blue);*/
 	position: relative;
-	margin-left: 205px;
-/*	border: 2px solid #000;*/
-	color: yellow;
+	margin-left: 105px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 40px;
+
 }
 .main .controls .div1{
 	height: 100%;
 	width: 100px;
 	float: left;
+	height: 30px;
+	margin-top: 5px;
+	border-left: 1px solid grey;
+	margin-left: 100px;
 }
 .main .controls .div1 select{
 	height: 100%;
 	width: 100px;
 	float: left;
-	margin-left: 100px;
+	margin-left: 10px;
 	background: none;
 	border: none;
-	color: #000;;
 }
 .main .controls .div1 select option{
 	background: var(--control);
@@ -131,7 +228,7 @@ body{
 	height: 40px;
 	width: 100%;
 	margin-top: 2px;
-	background: #7B1FA2;
+	background: #036EC9;
 	border-radius: 5px;
 }
 .main .translate-btn button{
@@ -151,12 +248,42 @@ body{
 	outline: none;
 	border: none;
 }
+
+.right{
+	height: 400px;
+	width: 50px;
+	margin-left: 1000px;
+	margin-top: 50px;
+/*	border: solid;*/
+	float: left;
+	position: absolute;
+
+}
+.right .subdiv{
+	height: 40px;
+	width: 50px;
+/*	border: solid;*/
+}
+.right .div-margin-top{
+	margin-top: 2px;
+}
+.right .subdiv button{
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+/*	border: none;*/
+	outline: none;
+}
+.right .subdiv button:focus{
+/*	border: none;*/
+	outline: none;
+}
 footer{
 	height: 50px;
 	width: 1350px;
 	position:absolute;
 	bottom: 0;
-	background: #7B1FA2;
+	background: #036EC9 ;
 	line-height: 50px;
 	color: #ffffff;
 	text-align: center;
