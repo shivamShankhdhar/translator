@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/45556d5dc4.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	
-	<!-- font awesome -->
-	<!-- C:/Users/Dell/Downloads/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css -->
 	<title>Translator</title>
 
-		<link rel="stylesheet" href="C:/Users/Dell/Downloads/fontawesome-free-6.4.0-web\fontawesome-free-6.4.0-web/css/bootstrap.css">
-        <link rel="stylesheet" href="C:/Users/Dell/Downloads/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/bootstrap-responsive.css">
-        <link rel="stylesheet" href="C:/Users/Dell/Downloads/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/font-awesome.css">
-        <link rel="stylesheet" href="C:/Users/Dell/Downloads/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/app.css">
-
-
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<!-- main css -->
-      <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
 
 </head>
 <body>
-<i class="fa-solid fa-arrow-right-arrow-left"></i>
-
-
+	<div class="message" id="message">
+		Text field should not be empty to perform this action
+		<span id="closeMsgBtn" title="click to close">X</span>
+	</div>
+	<div class="left">
+		<!-- copy text button from input textares -->
+	<div id="leftbtn0" class="div-0 subdiv" title="copy text of input field"><button ><i class="fa-solid fa-copy"></i></button></div>
+	<!-- text to sound from input textarea -->
+	<div class="div-1 subdiv div-margin-top" title="sound this text"><button id="left-btn-1"><i class="fa-solid fa-volume-high"></i></button></div>
+	<!-- reset the input that is in the input textarea -->
+	<div class="div-2 subdiv div-margin-top" id="left-btn-2" title="Reset text"><button ><i class="fa-solid fa-rotate-left"></i></button></div>
+	
+	</div>
+	
 <div class="main">
 	<div class="textareas">
 		<!-- text area from -->
@@ -41,7 +44,7 @@
 			<select></select>
 		</div>
 		<!-- icons -->
-		<div class="exchange" title="exchange"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+		<div class="exchange" title="exchange" id="exchange"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
 		<div class="div1">
 			<select></select>
 		</div>
@@ -51,11 +54,14 @@
 		<button id="translate">Translate</button>
 	</div>	
 </div>
+<div class="right">
+	<div class="div-0 subdiv"><button id="btn-0-copy-text-right"><i class="fa-solid fa-copy"></i></button></div>
+	<div class="div-1 subdiv div-margin-top" ><button id="btn-1"><i class="fa-solid fa-volume-high"></i></button></div>
+	<!-- <div class="div-2 subdiv"><button id="btn-2">1</button></div>
+	<div class="div-3 subdiv"><button id="btn-3">1</button></div> -->
+</div>
 <footer>Designed and Developed by Er. Shivam Shankhdhar</footer>
 <script  src="./countries.js"></script>
 <script  src="./script.js"></script>
-
-<!-- font awesome -->
-<script src="https://kit.fontawesome.com/45556d5dc4.js"></script>
 </body>
 </html>
